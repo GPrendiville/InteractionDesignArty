@@ -22,7 +22,7 @@ export default function App() {
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="home" color={color} size={26} />
+            <MaterialCommunityIcons name="home" color="white" size={26} />
           )
         }}/>
         <Tab.Screen 
@@ -31,7 +31,7 @@ export default function App() {
         options={{
           tabBarLabel: 'Explore',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="magnify" color={color} size={26} />
+            <MaterialCommunityIcons name="magnify" color='white' size={26} />
           )
         }}/>
         <Tab.Screen 
@@ -40,7 +40,7 @@ export default function App() {
         options={{
           tabBarLabel: 'Activity',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="bell" color={color} size={26} />
+            <MaterialCommunityIcons name="bell" color='white' size={26} />
           )
         }}/>
         <Tab.Screen 
@@ -49,7 +49,7 @@ export default function App() {
         options={{
           tabBarLabel: 'Profile',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="account" color={color} size={26}/>
+            <MaterialCommunityIcons name="account" color='white' size={26}/>
           )
         }}/>
       </Tab.Navigator>
@@ -57,11 +57,11 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+//const styles = StyleSheet.create({
+ // container: {
+ //   flex: 1,
+ //   backgroundColor: '#fff',
+ //   alignItems: 'center',
+ //   justifyContent: 'center',
+ // },
+//});
