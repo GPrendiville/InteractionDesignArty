@@ -1,32 +1,19 @@
-import React, { useState } from "react";
-import { Text, StyleSheet } from "react-native";
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
-const onPressTitle = () => {
-  console.log("title pressed");
-};
-
-export default function PostPage() {
-  const titleText = useState("Bird's Nest");
-  const bodyText = useState("This is not really a bird nest.");
-
+export default function App() {
   return (
-    <Text style={styles.baseText}>
-      <Text style={styles.titleText} onPress={onPressTitle}>
-        {titleText}
-        {"\n"}
-        {"\n"}
-      </Text>
-      <Text numberOfLines={5}>{bodyText}</Text>
-    </Text>
+    <View style={styles.container}>
+      <Text>Posting Page with a form for creating posts</Text>
+    </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
-  baseText: {
-    fontFamily: "Cochin"
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  titleText: {
-    fontSize: 20,
-    fontWeight: "bold"
-  }
 });

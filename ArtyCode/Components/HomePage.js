@@ -1,16 +1,9 @@
 import * as React from 'react';
 import { View, Text, Image, StyleSheet, SafeAreaView, StatusBar } from 'react-native'
 import { Card, ListItem, Button } from 'react-native-elements';
-import { createStackNavigator } from '@react-navigation/stack';
+import { CardStyleInterpolators, createStackNavigator } from '@react-navigation/stack';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import PostPage from './PostPage'
-
-const users = [
-  {
-    name: 'brynn',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg'
-  }
-]
 
 const Stack = createStackNavigator();
 
@@ -19,19 +12,20 @@ function HomeScreen() {
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#6a51ae" />
       <View style={styles.container}>
-        <Card containerStyle={{ padding: 0 }} >
-          {
-            users.map((u, i) => {
-              return (
-                <ListItem
-                  key={i}
-                  roundAvatar
-                  title={u.name}
-                  leftAvatar={{ source: { uri: u.avatar } }}
-                />
-              );
-            })
-          }
+        <Card>
+          <Card.Title>Username and profile picture</Card.Title>
+          <Card.Divider/>
+          <Text style={{marginBottom: 10}}>
+            Compositions (picture, text, audio file)
+          </Text>
+          <Card.Divider/>
+          <Text style={{marginBottom: 10}}>
+            Caption
+          </Text>
+          <Card.Divider/>
+          <Button
+             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+             title='Comments' />
         </Card>
       </View>
     </SafeAreaView>
