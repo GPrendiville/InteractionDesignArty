@@ -47,7 +47,7 @@ export default function HomePage() {
             fontWeight: 'bold',
           }, headerRight: () => (
             <Button
-              onPress={() => navigate(PostPage)}
+             // onPress={() => (PostPage)}
               type='clear'
               icon={<MaterialCommunityIcons name="plus" color="white" size={30} />}
             />

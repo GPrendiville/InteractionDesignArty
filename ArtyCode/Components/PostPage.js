@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+export default function PostPage() {
   return (
     <View style={styles.container}>
       <Text>Posting Page with a form for creating posts</Text>
